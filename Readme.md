@@ -2,7 +2,8 @@ Shell commands for CRA app development
 
 To create entire folder structure based on feature
 command:
-node folder.js feature_name
+node folder.js Home target
+example: node folder.js Home ./src
 
 To create constants for a feature
 command:
