@@ -1,9 +1,12 @@
 var shell = require('shelljs');
 let feature = process.argv[2] // feature name
+let target = process.argv[3];
+
 
 folder()
 
 function folder() {
+    shell.cd(target); // go to the target
     shell.mkdir(feature);
     shell.cd(feature);
     
@@ -52,7 +55,7 @@ function folder() {
     shell.touch(feature + 'State.ts');
     shell.cd('..');
 
-    shell.echo('Files for  ' + action + ' created')
+    shell.echo('Files for  ' + feature + ' created')
 
 }
 
